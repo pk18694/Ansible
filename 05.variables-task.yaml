@@ -1,10 +1,10 @@
 - name: variables from play level
   hosts: web
   vars:
-    course: "Devops"
+    Course: "Devops"
     City : "bangalore"
     year : "2025"
   tasks:
   - name: check variables 
     ansible.builtin.debug:
-      msg: "Hi,i am learning {{Course}} in {{city}} since {{year}}"
+      msg: "Hi,i am learning {{Course}} in {{City}} since {{year}}"
